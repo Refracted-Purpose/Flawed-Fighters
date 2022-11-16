@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Player1controller : MonoBehaviour
 {
-   private bool isGrounded;
+    private bool isGrounded;
     private Rigidbody2D rb;
     //Public variables set in Unity Inspector
     public float xSpeed;
