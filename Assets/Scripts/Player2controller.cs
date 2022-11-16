@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Player1controller : MonoBehaviour
-{
+public class Player2controller : MonoBehaviour
+{ 
     private bool isGrounded;
     private Rigidbody2D rb;
     //Public variables set in Unity Inspector
@@ -21,7 +21,7 @@ public class Player1controller : MonoBehaviour
     // Update is called once per frame, Fixed used for physics
     void FixedUpdate()
     {
-        float xHat = new Vector2( Input.GetAxis("Horizontal1") , 0).normalized.x;
+        float xHat = new Vector2( Input.GetAxis("Horizontal2") , 0).normalized.x;
         float vx = xHat * xSpeed;
         if (isGrounded) {
             rb.AddForce(transform.right * vx);
@@ -30,7 +30,7 @@ public class Player1controller : MonoBehaviour
         }
 
 
-        float yHat = new Vector2(0, Input.GetAxis("Vertical1")).normalized.y;
+        float yHat = new Vector2(0, Input.GetAxis("Vertical2")).normalized.y;
         if (isGrounded && yHat == 1) {
             float vy = yHat * jumpStrength;
             isGrounded = false;
