@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class Hithandler2 : MonoBehaviour
 {
-    public float LaunchStrength;
+    public int damage;
     public float atk1x;
     public float atk1y;
     public float hitTime;
