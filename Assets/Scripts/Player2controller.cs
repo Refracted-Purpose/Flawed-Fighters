@@ -29,6 +29,7 @@ public class Player2controller : MonoBehaviour
         if (hasRespawned) {
             transform.position = respawnPos;
             rb.gravityScale = 0;
+            rb.velocity = new Vector2 (0,0);
             if (Input.GetAxis("Player2Hor") != 0 || Input.GetAxis("Vertical2") != 0){
                 hasRespawned = false;
             }
@@ -65,7 +66,7 @@ public class Player2controller : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision){
         Debug.Log(collision.gameObject.tag);
-        if(collision.gameObject.tag == "Hitbox" && hasCollided != true){
+        if(collision.gameObject.tag == "Hitbox" && hasCollided != true && hasRespawned == false){
             hasCollided = true;
             Debug.Log(collision.gameObject.GetComponent<Hithandler2>());
             int damageAmount = collision.gameObject.GetComponent<Hithandler2>().damage;

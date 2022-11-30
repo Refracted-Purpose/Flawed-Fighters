@@ -13,6 +13,8 @@ public class Player1controller : MonoBehaviour
     public float xSpeed2;
     public float jumpStrength;
     private bool hasCollided;
+    private Vector3 respawnPos = new Vector3(0.5f, 2, 0);
+    private bool hasRespawned = false;
     //initialize private variables in start
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,15 @@ public class Player1controller : MonoBehaviour
     // Update is called once per frame, Fixed used for physics
     void FixedUpdate()
     {   
+        if (hasRespawned) {
+            transform.position = respawnPos;
+            rb.gravityScale = 0;
+            rb.velocity = new Vector2 (0, 0);
+            if (Input.GetAxis("Horizontal1") != 0 || Input.GetAxis("Vertical1") != 0){
+                hasRespawned = false;
+            }
+        } else {
+            rb.gravityScale = 4;}
         float xHat = new Vector2( Input.GetAxis("Horizontal1") , 0).normalized.x;
         float vx = xHat * xSpeed2;
         if (isGrounded) {
@@ -47,12 +58,13 @@ public class Player1controller : MonoBehaviour
         if(collision.gameObject.tag == "BlastLine") {
             stock = stock - 1;
             damage = 0;
+            hasRespawned = true;
         }
     }
 
     void OnTriggerEnter2D(Collider2D collision){
         Debug.Log(collision.gameObject.tag);
-        if(collision.gameObject.tag == "Hitbox" && hasCollided != true){
+        if(collision.gameObject.tag == "Hitbox" && hasCollided != true && hasRespawned == false){
             hasCollided = true;
             Debug.Log(collision.gameObject.GetComponent<Hithandler2>());
             int damageAmount = collision.gameObject.GetComponent<Hithandler2>().damage;
