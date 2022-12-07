@@ -824,8 +824,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356940114}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.03, y: 0, z: 0}
-  m_LocalScale: {x: 0.18585715, y: 0.18585715, z: 0.18585715}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5966014, y: 0.5966014, z: 0.5966014}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 403863494}
@@ -844,12 +844,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 40
-  atk1x: 2
-  atk1y: 1
-  hitTime: 40
+  atk1x: 40
+  atk1y: 30
+  hitTime1: 0
   launchVert: 100
   launchHoriz: 100
   atk1Pos: {x: 1, y: 1}
+  damage2: 0
+  atk2x: 0
+  atk2y: 0
+  hitTime2: 40
+  launchHoriz2: 0
+  launchVert2: 0
+  atk2Pos: {x: 0, y: 0}
 --- !u!61 &1356940117
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -964,7 +971,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.029999971, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!1 &1394566957
