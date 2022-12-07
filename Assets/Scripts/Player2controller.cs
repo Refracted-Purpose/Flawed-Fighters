@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Player2controller : MonoBehaviour
-{ 
+{   
+    private bool playerRightFacing;
     public int stock;
     public int damage;
     private bool isGrounded;
@@ -25,7 +26,7 @@ public class Player2controller : MonoBehaviour
 
     // Update is called once per frame, Fixed used for physics
     void FixedUpdate()
-    {   
+    { 
         if (hasRespawned) {
             transform.position = respawnPos;
             rb.gravityScale = 0;
@@ -36,6 +37,10 @@ public class Player2controller : MonoBehaviour
         } else {
             rb.gravityScale = 4;
             float xHat = new Vector2( Input.GetAxis("Player2Hor") , 0).normalized.x;
+            if (xHat > 0){
+                playerRightFacing = true;
+            }
+            {}
             float vx = xHat * xSpeed2;
             if (isGrounded) {
                 rb.AddForce(transform.right * vx);

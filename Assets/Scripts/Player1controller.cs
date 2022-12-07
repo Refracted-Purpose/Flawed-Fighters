@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Player1controller : MonoBehaviour
 { 
+    private bool playerRightFacing;
     public int stock;
     public int damage;
     private bool isGrounded;
@@ -19,6 +20,7 @@ public class Player1controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerRightFacing = true;
         isGrounded = false;
         rb = GetComponent<Rigidbody2D>();
     }
@@ -36,6 +38,14 @@ public class Player1controller : MonoBehaviour
         } else {
             rb.gravityScale = 4;}
         float xHat = new Vector2( Input.GetAxis("Horizontal1") , 0).normalized.x;
+        if (xHat > 0){
+                playerRightFacing = true;
+                Debug.Log ("Player is right facing " + playerRightFacing);
+            }
+            if (xHat < 0){
+                playerRightFacing = false;
+                    Debug.Log ("Player is right facing " + playerRightFacing);
+            }
         float vx = xHat * xSpeed2;
         if (isGrounded) {
             rb.AddForce(transform.right * vx);
