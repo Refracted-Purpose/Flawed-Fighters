@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ca88a594aa36e3f409989c075ea0b740
+guid: 0a9bd66b21136774985d1354b2b3b4ef
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Balthazar attack_0
+      name: joeidle_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 384
-        width: 128
-        height: 128
+        y: 560
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b535a222f2312a74dad42aed33df45a2
-      internalID: 11375498
+      spriteID: 62745f26c5d98144bb58e6c46e63479e
+      internalID: -429932133
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Balthazar attack_1
+      name: joeidle_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 384
-        width: 128
-        height: 128
+        x: 140
+        y: 560
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfd05f452b6482a4089b3dfad9f6b618
-      internalID: -1419081922
+      spriteID: 052926351fea5e9498fadc8d818fdf6a
+      internalID: 907358732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Balthazar attack_2
+      name: joeidle_2
       rect:
         serializedVersion: 2
-        x: 256
-        y: 384
-        width: 128
-        height: 128
+        x: 280
+        y: 560
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9aee168c34c3bd4fa9e12042f5694a7
-      internalID: -698650857
+      spriteID: e31c431e215e0b24ab166d6ce71a6981
+      internalID: -1685597448
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Balthazar attack_3
+      name: joeidle_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256
-        width: 128
-        height: 128
+        x: 420
+        y: 560
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,62 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23ccae14dc4c6e84686c17a31d89df62
-      internalID: -645994328
+      spriteID: b355346d482d1ce40b1739fa11473226
+      internalID: 250371026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Balthazar attack_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 256
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6cb738d67be1b524aad4ae8eb8ddd894
-      internalID: -1660110840
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Balthazar attack_5
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 256
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75919adbfd212cd47960cfc07c99e265
-      internalID: 1739825104
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Balthazar attack_6
+      name: joeidle_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
-        width: 128
-        height: 128
+        y: 420
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e229c1697a7a074db66a86d23e216e3
-      internalID: 515952224
+      spriteID: 20e9c269f8d7a9f45a79d77b69d8b35c
+      internalID: 2058243762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Balthazar attack_7
+      name: joeidle_5
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 128
-        height: 128
+        x: 140
+        y: 420
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,20 +236,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 907368e9a2a418140ad0e54a38d47d12
-      internalID: -1984305708
+      spriteID: edab3547b736d6e4a8bad2ec3af92cca
+      internalID: -1830581548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Balthazar attack_8
+      name: joeidle_6
       rect:
         serializedVersion: 2
-        x: 256
-        y: 128
-        width: 128
-        height: 128
+        x: 280
+        y: 420
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,20 +257,209 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 923752067b55b2f4e880178deb9f1785
-      internalID: 773766682
+      spriteID: 4929502bc65df92488ace0524196c474
+      internalID: -1951771820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Balthazar attack_9
+      name: joeidle_7
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 420
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9f443ff9a52394483a8d18a97bc74d
+      internalID: -1867734500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joeidle_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3142a7b290d9d54b969d0ec422c970b
+      internalID: -266985702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joeidle_9
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 280
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9dd6dfd50e5b04f91aac5a1df1dda2
+      internalID: -689774560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joeidle_10
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 280
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd6f8d13cece2b4f8b100949290e1c5
+      internalID: 2117482565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joeidle_11
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 280
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f211ebf1538a14086bc2d4c5536d2d
+      internalID: -110039751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joeidle_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 140
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56671ac357e6244cbdfa19a613abf79
+      internalID: -1624873994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joeidle_13
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 140
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba9ce662bb0c7884aa845cc2545906bd
+      internalID: 1282439955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joeidle_14
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 140
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dccd403190a3ce4f8bbf01ccfc5cd6a
+      internalID: 1414564723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joeidle_15
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 140
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2dfc6734b93a45469669b980cb8f4ea
+      internalID: -855655947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joeidle_16
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
-        height: 128
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,20 +467,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e205d6ceac035e4696fb6f22d9178c2
-      internalID: 1561156786
+      spriteID: 096b27bc9027cec49a926976e9a800c1
+      internalID: 1662530594
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Balthazar attack_10
+      name: joeidle_17
       rect:
         serializedVersion: 2
-        x: 128
+        x: 140
         y: 0
-        width: 128
-        height: 128
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,29 +488,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08e179bda89f5154cbd0b5164198e2cd
-      internalID: -1261387726
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Balthazar attack_11
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f05a9d04d36f7f64da2559a1890cfdf7
-      internalID: 604252503
+      spriteID: 929992bf5241d4d42a90820c753cc45e
+      internalID: -1354852483
       vertices: []
       indices: 
       edges: []
@@ -379,18 +505,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Balthazar attack_0: 11375498
-      Balthazar attack_6: 515952224
-      Balthazar attack_8: 773766682
-      Balthazar attack_1: -1419081922
-      Balthazar attack_7: -1984305708
-      Balthazar attack_5: 1739825104
-      Balthazar attack_9: 1561156786
-      Balthazar attack_3: -645994328
-      Balthazar attack_4: -1660110840
-      Balthazar attack_10: -1261387726
-      Balthazar attack_11: 604252503
-      Balthazar attack_2: -698650857
+      joeidle_17: -1354852483
+      joeidle_8: -266985702
+      joeidle_12: -1624873994
+      joeidle_7: -1867734500
+      joeidle_4: 2058243762
+      joeidle_14: 1414564723
+      joeidle_3: 250371026
+      joeidle_10: 2117482565
+      joeidle_0: -429932133
+      joeidle_5: -1830581548
+      joeidle_9: -689774560
+      joeidle_6: -1951771820
+      joeidle_15: -855655947
+      joeidle_11: -110039751
+      joeidle_1: 907358732
+      joeidle_2: -1685597448
+      joeidle_13: 1282439955
+      joeidle_16: 1662530594
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

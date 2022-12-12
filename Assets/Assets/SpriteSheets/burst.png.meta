@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d294a751bac8ae048a6ba3a36cf11e9e
+guid: 2f582dc30b746634b977e8bf164dcba5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: New Piskel (2)_0
+      name: burst_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 160
-        width: 80
-        height: 80
+        y: 384
+        width: 400
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12631f0aab4066243b0437c4badc773b
-      internalID: -846100717
+      spriteID: 77672b0014094534f8e5d6d9455629c3
+      internalID: -1982953539
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel (2)_1
+      name: burst_1
       rect:
         serializedVersion: 2
-        x: 80
-        y: 160
-        width: 80
-        height: 80
+        x: 400
+        y: 384
+        width: 400
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c4cfba883f121843bcb29db08a8d00f
-      internalID: -1415677852
+      spriteID: f45d6f86c401a964a9b178a858484b06
+      internalID: -450910016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel (2)_2
+      name: burst_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 80
-        width: 80
-        height: 80
+        y: 256
+        width: 400
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e5a0bc2e8bb40b4491b8cecf6d6a50a
-      internalID: 2009256907
+      spriteID: 27ec18322a718d44f8d81cc128f5c92e
+      internalID: -543755239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel (2)_3
+      name: burst_3
       rect:
         serializedVersion: 2
-        x: 80
-        y: 80
-        width: 80
-        height: 80
+        x: 400
+        y: 256
+        width: 400
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +194,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f324e33db04003544b9529184f833849
-      internalID: 722033160
+      spriteID: b47e748f0c9d5544bb556851438edcff
+      internalID: 368580652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel (2)_4
+      name: burst_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 400
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6787bdae43b6f134cb40d8a47134ac13
+      internalID: -1233105679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst_5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 128
+        width: 400
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4672feda1173dc2419199d6d9c0fb7ce
+      internalID: 706391513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 80
-        height: 80
+        width: 400
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,8 +257,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1d716250ab03c042a7f017a722e56ff
-      internalID: -1183143914
+      spriteID: 1ef8185813d5de34689a8551d6f2e285
+      internalID: -1326941489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst_7
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 400
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69391c0f25700a4598d78cb3a372183
+      internalID: 1533679215
       vertices: []
       indices: 
       edges: []
@@ -232,11 +295,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      New Piskel (2)_4: -1183143914
-      New Piskel (2)_3: 722033160
-      New Piskel (2)_2: 2009256907
-      New Piskel (2)_1: -1415677852
-      New Piskel (2)_0: -846100717
+      burst_0: -1982953539
+      burst_6: -1326941489
+      burst_7: 1533679215
+      burst_2: -543755239
+      burst_4: -1233105679
+      burst_5: 706391513
+      burst_3: 368580652
+      burst_1: -450910016
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

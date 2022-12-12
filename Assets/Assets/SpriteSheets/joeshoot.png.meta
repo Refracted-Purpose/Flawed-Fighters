@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d294a751bac8ae048a6ba3a36cf11e9e
+guid: 83dcd1a7529f4bb4a9c78c94892026d5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: New Piskel (2)_0
+      name: joeshoot_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 160
-        width: 80
-        height: 80
+        y: 700
+        width: 400
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12631f0aab4066243b0437c4badc773b
-      internalID: -846100717
+      spriteID: c4a399bec2d39ac4cb390097109bb4a3
+      internalID: -1803726051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel (2)_1
+      name: joeshoot_1
       rect:
         serializedVersion: 2
-        x: 80
-        y: 160
-        width: 80
-        height: 80
+        x: 400
+        y: 700
+        width: 400
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c4cfba883f121843bcb29db08a8d00f
-      internalID: -1415677852
+      spriteID: dd9fb0c5e0d1b614aa34cccd34ba7195
+      internalID: -126897362
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel (2)_2
+      name: joeshoot_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 80
-        width: 80
-        height: 80
+        y: 560
+        width: 400
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e5a0bc2e8bb40b4491b8cecf6d6a50a
-      internalID: 2009256907
+      spriteID: 23857a55b75c98841b163a51fb702e94
+      internalID: 240980259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel (2)_3
+      name: joeshoot_3
       rect:
         serializedVersion: 2
-        x: 80
-        y: 80
-        width: 80
-        height: 80
+        x: 400
+        y: 560
+        width: 400
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +194,146 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f324e33db04003544b9529184f833849
-      internalID: 722033160
+      spriteID: 9b3f78c138181b84c899d124daf02753
+      internalID: -1046424169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel (2)_4
+      name: joeshoot_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 420
+        width: 400
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd2fad200a3b754a963d145026d69d8
+      internalID: 1043732465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joeshoot_5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 420
+        width: 400
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a64d1ae4a47802245aeec102751a0f86
+      internalID: 1745153566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joeshoot_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 400
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1282a124be48e4c9cd155727978534
+      internalID: 1509417108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joeshoot_7
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 280
+        width: 400
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f99093b89a3c646839059f1bb0f0f9
+      internalID: 759103534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joeshoot_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 140
+        width: 400
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdcab732b7ed28e4f93406ea3661827a
+      internalID: -342311828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joeshoot_9
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 140
+        width: 400
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901d7d38023395f4ba0697e9b004a686
+      internalID: 2146100921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joeshoot_10
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 80
-        height: 80
+        width: 400
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,8 +341,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1d716250ab03c042a7f017a722e56ff
-      internalID: -1183143914
+      spriteID: 31b946d8756e253429bae97af18093a2
+      internalID: -1258103403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joeshoot_11
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 400
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 396e7989123bd554a9491795031a7d74
+      internalID: 463529796
       vertices: []
       indices: 
       edges: []
@@ -232,11 +379,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      New Piskel (2)_4: -1183143914
-      New Piskel (2)_3: 722033160
-      New Piskel (2)_2: 2009256907
-      New Piskel (2)_1: -1415677852
-      New Piskel (2)_0: -846100717
+      joeshoot_10: -1258103403
+      joeshoot_8: -342311828
+      joeshoot_11: 463529796
+      joeshoot_7: 759103534
+      joeshoot_0: -1803726051
+      joeshoot_6: 1509417108
+      joeshoot_4: 1043732465
+      joeshoot_5: 1745153566
+      joeshoot_2: 240980259
+      joeshoot_3: -1046424169
+      joeshoot_9: 2146100921
+      joeshoot_1: -126897362
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

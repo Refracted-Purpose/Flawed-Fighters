@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3816ea5e60c3ae84894a5d546ea80693
+guid: 24dddf162ddf22747b37c2f3059e48c8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NIck move left_0
+      name: joemove_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 256
-        width: 128
-        height: 128
+        y: 280
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0288aad4213e7be41b8eee5dd26e1eb0
-      internalID: -1093037614
+      spriteID: 677f9fc0fd01de24493f3c22b243be36
+      internalID: -175844914
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NIck move left_1
+      name: joemove_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 256
-        width: 128
-        height: 128
+        x: 140
+        y: 280
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64bedcb0b163bea44a6188354f68dbaa
-      internalID: -1843871675
+      spriteID: d14638f74c0311e4e926ae1ae4fc9a63
+      internalID: -1019000427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NIck move left_2
+      name: joemove_2
       rect:
         serializedVersion: 2
-        x: 256
-        y: 256
-        width: 128
-        height: 128
+        x: 280
+        y: 280
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3146f93f8c583642bddeab0c6327366
-      internalID: 766913014
+      spriteID: 8cab9ee4af01b0e448e6f0798b224639
+      internalID: -696959762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NIck move left_3
+      name: joemove_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
-        width: 128
-        height: 128
+        y: 140
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c485cea8d0c36b24d9b689ce8678b5f7
-      internalID: 1436602344
+      spriteID: bc0a779887cdf6e4284b76ec483fc1bd
+      internalID: 1796495793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NIck move left_4
+      name: joemove_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 128
-        height: 128
+        x: 140
+        y: 140
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f6c9557bedecff4dbc6e5c96ca8963d
-      internalID: -269504220
+      spriteID: a1e93b59844bd7e4cbafa2e7ae816cc6
+      internalID: -1782027780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NIck move left_5
+      name: joemove_5
       rect:
         serializedVersion: 2
-        x: 256
-        y: 128
-        width: 128
-        height: 128
+        x: 280
+        y: 140
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,20 +236,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c4c56804d4b94849b4d560f88f3b3bb
-      internalID: 1732508352
+      spriteID: 2e9d41bf8d68c6b479b12242c63b1680
+      internalID: -552348635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NIck move left_6
+      name: joemove_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
-        height: 128
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,20 +257,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6da64581bcf439246b60bde6fe39363c
-      internalID: -1910326380
+      spriteID: 9a4ddf050d04762438242052500bc5eb
+      internalID: 1310584863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NIck move left_7
+      name: joemove_7
       rect:
         serializedVersion: 2
-        x: 128
+        x: 140
         y: 0
-        width: 128
-        height: 128
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,8 +278,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 201adb37bbd9bdf4aa6c6063ad895c35
-      internalID: -1063606783
+      spriteID: 52159519dcf15bd4ea453ec76f6143b2
+      internalID: -512189412
       vertices: []
       indices: 
       edges: []
@@ -295,14 +295,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      NIck move left_3: 1436602344
-      NIck move left_5: 1732508352
-      NIck move left_6: -1910326380
-      NIck move left_4: -269504220
-      NIck move left_1: -1843871675
-      NIck move left_7: -1063606783
-      NIck move left_2: 766913014
-      NIck move left_0: -1093037614
+      joemove_2: -696959762
+      joemove_4: -1782027780
+      joemove_1: -1019000427
+      joemove_5: -552348635
+      joemove_3: 1796495793
+      joemove_7: -512189412
+      joemove_6: 1310584863
+      joemove_0: -175844914
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
