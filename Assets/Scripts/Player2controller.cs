@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Player2controller : MonoBehaviour
 {   
+    public float hitTime1;
+    private float hitTimeCounter;
+    public Vector2 attack1Offset; 
+    private bool fireAllow;
     public int stock;
     public int damage;
     private bool isGrounded;
@@ -19,6 +23,7 @@ public class Player2controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        fireAllow = true;
         isGrounded = false;
         rb = GetComponent<Rigidbody2D>();
     }
@@ -26,6 +31,9 @@ public class Player2controller : MonoBehaviour
     // Update is called once per frame, Fixed used for physics
     void FixedUpdate()
     {  
+        if(Input.GetAxis ("Fire") != 0){
+            fireAllow = false;
+        }
         if (hasRespawned) {
             transform.position = respawnPos;
             rb.gravityScale = 0;
@@ -37,10 +45,9 @@ public class Player2controller : MonoBehaviour
             rb.gravityScale = 4;
             float xHat = new Vector2( Input.GetAxis("Player2Hor") , 0).normalized.x;
             float vx = xHat * xSpeed2;
-            {
+        if (fireAllow)  {
                 rb.AddForce(transform.right * vx);
             }
-
             float yHat = new Vector2(0, Input.GetAxis("Vertical2")).normalized.y;
             if (isGrounded && yHat == 1) {
                 float vy = yHat * jumpStrength;
@@ -48,6 +55,13 @@ public class Player2controller : MonoBehaviour
                 rb.AddForce(transform.up * vy);
             }
         }
+        if(hitTimeCounter <= hitTime1 && !fireAllow){
+            hitTimeCounter++;
+            Debug.Log("hit time count");
+        } else if (!fireAllow) {
+            hitTimeCounter = 0;
+            fireAllow = true; 
+    }
     }
     void OnTriggerExit2D(Collider2D collision){
         if(collision.gameObject.tag == "Hitbox") {

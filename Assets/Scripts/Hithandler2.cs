@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class Hithandler2 : MonoBehaviour
 {
-    private int facingRight;
+    private bool facingRight;
     public bool atk1;
     public bool atk2;
     public int damage;
@@ -27,9 +27,9 @@ public class Hithandler2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        facingRight = 1;
-        atk1 = true;
-        atk2 = true;
+        facingRight = true;
+        atk1 = false;
+        atk2 = false;
         fireAllow = true;
         hitTimeCounter = 0;
         parentTransform = gameObject.GetComponentInParent(typeof(Transform)) as Transform;
@@ -39,41 +39,57 @@ public class Hithandler2 : MonoBehaviour
     void FixedUpdate()
     {
         float xHat = new Vector2( Input.GetAxis("Player2Hor") , 0).normalized.x;
-            if (xHat > 0){
-                facingRight = 1;
-            }
-            if (xHat < 0){
-                facingRight = -1;
-            }
         if(Input.GetAxis ("Fire") >= 0.1f && fireAllow) {
             fireAllow = false;
+            atk1 = true;
             transform.localScale = new Vector3(atk1x, atk1y);
-            transform.position = new Vector3 ((atk1Pos.x + parentTransform.position.x) * facingRight, atk1Pos.y + parentTransform.position.y, 0);
-            // transform.position = new Vector3 (parentTransform.position.x, parentTransform.position.y, 0);
-        } 
-        // else if (Input.GetAxis ("Fire") <= -0.1f && fireAllow) {
-        //     fireAllow = false;
-        //     transform.localScale = new Vector3 (atk2x, atk2y);
-        //     transform.position = new Vector3 ((atk2Pos.x + parentTransform.position.x) * facingRight, atk2Pos.y + parentTransform.position.y, 0);
-        // }
+        if(facingRight) {
+            transform.position = new Vector3 (atk1Pos.x + parentTransform.position.x , atk1Pos.y + parentTransform.position.y, 0);}
+        else if (!facingRight){
+            transform.position = new Vector3 ((atk1Pos.x * -1) + parentTransform.position.x , atk1Pos.y + parentTransform.position.y, 0);}
+        }
+            // transform.position = new Vector3 (parentTransform.position.x, parentTransform.position.y, 0); 
+        else if (Input.GetAxis ("Fire") <= -0.1f && fireAllow) {
+            fireAllow = false;
+            atk2 = true;
+            transform.localScale = new Vector3 (atk2x, atk2y);
+            transform.position = new Vector3 ((atk2Pos.x + parentTransform.position.x), atk2Pos.y + parentTransform.position.y, 0);
+        }
         
         if(hitTimeCounter <= hitTime1 && !fireAllow){
             hitTimeCounter++;
             Debug.Log("hit time count");
         } else if (!fireAllow && atk1) {
             transform.localScale = new Vector3(0.1f, 0.1f);
-            hitTimeCounter = 0; 
-            transform.position = new Vector3 (parentTransform.position.x - atk1Pos.x, parentTransform.position.y - atk1Pos.y, 0);
+            hitTimeCounter = 0;
             fireAllow = true;
+            atk1 = false; 
+            if(facingRight) {
+                transform.position = new Vector3 (parentTransform.position.x - atk1Pos.x, parentTransform.position.y - atk1Pos.y, 0);
+            }
+            else if (!facingRight) {
+                transform.position = new Vector3 (parentTransform.position.x - (atk1Pos.x *-1), parentTransform.position.y - atk1Pos.y, 0);
+            }
             Debug.Log ("hit timer reached");
         } 
-        // else {
-        //     transform.localScale = new Vector3(0.1f, 0.1f);
-        //     hitTimeCounter = 0; 
-        //     transform.position = new Vector3 (parentTransform.position.x - atk2Pos.x, parentTransform.position.y - atk2Pos.y, 0);
-        //     fireAllow = true;
-        //     Debug.Log ("hit timer reached");}
-        //         parentTransform = gameObject.GetComponentInParent(typeof(Transform)) as Transform;
-        //         // Debug.Log(parentTransform.position);
+        else if (!fireAllow && atk2) {
+            transform.localScale = new Vector3(0.1f, 0.1f);
+            hitTimeCounter = 0; 
+            transform.position = new Vector3 (parentTransform.position.x - atk2Pos.x, parentTransform.position.y - atk2Pos.y, 0);
+            fireAllow = true;
+            atk2 = false;
+            Debug.Log ("hit timer reached");
+        }
+        parentTransform = gameObject.GetComponentInParent(typeof(Transform)) as Transform;
+        if (fireAllow){
+        if (xHat > 0){
+            facingRight = true;
+        }
+        if (xHat < 0){
+            Debug.Log("left");
+            facingRight = false;
+        }
+        }
+                // Debug.Log(parentTransform.position);
     }
 }

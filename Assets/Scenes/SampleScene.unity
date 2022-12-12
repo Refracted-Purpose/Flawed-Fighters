@@ -220,7 +220,7 @@ RectTransform:
   - {fileID: 1239754579}
   - {fileID: 841151849}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -344,15 +344,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 403863490}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.5, y: 2, z: 0}
   m_LocalScale: {x: 4.970798, y: 4.970798, z: 4.970798}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1356940115}
   - {fileID: 483255422}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 520075756}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &403863495
 MonoBehaviour:
@@ -366,6 +366,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f03bc423a5387d84a8306a892fcf9756, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitTime1: 40
+  attack1Offset: {x: -1, y: -1}
   stock: 3
   damage: 0
   xSpeed2: 30
@@ -505,7 +507,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &483255419
 GameObject:
@@ -751,6 +753,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1769926662}
+  - {fileID: 403863494}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -972,8 +975,8 @@ MonoBehaviour:
   launchHoriz: 100
   atk1Pos: {x: 1, y: 1}
   damage2: 30
-  atk2x: 3
-  atk2y: 4
+  atk2x: 0.3
+  atk2y: 0.4
   hitTime2: 40
   launchHoriz2: 30
   launchVert2: 30
