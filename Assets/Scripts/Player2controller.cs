@@ -4,10 +4,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Player2controller : MonoBehaviour
-{   
+{  
+    private Animator animator;
+    private bool facingRight;
+    private bool atk2;
+    private bool atk1;
     public float hitTime1;
     private float hitTimeCounter;
     public Vector2 attack1Offset; 
+    public Vector2 attack2Offset;
     private bool fireAllow;
     public int stock;
     public int damage;
@@ -23,6 +28,7 @@ public class Player2controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponentInChildren<Animator>();
         fireAllow = true;
         isGrounded = false;
         rb = GetComponent<Rigidbody2D>();
@@ -30,9 +36,18 @@ public class Player2controller : MonoBehaviour
 
     // Update is called once per frame, Fixed used for physics
     void FixedUpdate()
-    {  
-        if(Input.GetAxis ("Fire") != 0){
-            fireAllow = false;
+    { 
+        if (!fireAllow && isGrounded) {
+            rb.constraints = RigidbodyConstraints2D.FreezePositionY;
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        } else if (!fireAllow){
+            rb.constraints = RigidbodyConstraints2D.FreezePosition;
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            rb.gravityScale = 0;
+            rb.velocity = new Vector2 (0,0);
+        } else {
+            rb.constraints = RigidbodyConstraints2D.None;
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
         if (hasRespawned) {
             transform.position = respawnPos;
@@ -44,10 +59,14 @@ public class Player2controller : MonoBehaviour
         } else {
             rb.gravityScale = 4;
             float xHat = new Vector2( Input.GetAxis("Player2Hor") , 0).normalized.x;
+            if (xHat > 0){
+            facingRight = true;
+        }
+        if (xHat < 0){
+            facingRight = false;
+        }
             float vx = xHat * xSpeed2;
-        if (fireAllow)  {
                 rb.AddForce(transform.right * vx);
-            }
             float yHat = new Vector2(0, Input.GetAxis("Vertical2")).normalized.y;
             if (isGrounded && yHat == 1) {
                 float vy = yHat * jumpStrength;
@@ -58,10 +77,36 @@ public class Player2controller : MonoBehaviour
         if(hitTimeCounter <= hitTime1 && !fireAllow){
             hitTimeCounter++;
             Debug.Log("hit time count");
-        } else if (!fireAllow) {
+        } else if (!fireAllow && atk1) {
             hitTimeCounter = 0;
-            fireAllow = true; 
+            fireAllow = true;
+            atk1 = false;
+            animator.SetBool("IsLaser", false);
+            // Debug.Log("counter set to 0");
+    } else if (!fireAllow && atk2) {
+            hitTimeCounter = 0;
+            fireAllow = true;
+            atk2 = false;
     }
+    if(Input.GetAxis ("Fire") > 0 && fireAllow){
+            fireAllow = false;
+            animator.SetBool("IsLaser", true);
+            if (facingRight){
+                transform.position = new Vector3 (transform.position.x + attack1Offset.x, transform.position.y + attack1Offset.y, 0);
+            } else if (!facingRight) {
+                transform.position = new Vector3 (transform.position.x + (attack1Offset.x * -1), transform.position.y + attack1Offset.y, 0);
+            }
+            atk1 = true;
+        }
+    if(Input.GetAxis ("Fire") < 0 && fireAllow){
+            fireAllow = false;
+            if (facingRight){
+                transform.position = new Vector3 (transform.position.x + attack2Offset.x, transform.position.y + attack2Offset.y, 0);
+            } else if (!facingRight) {
+                transform.position = new Vector3 (transform.position.x + (attack2Offset.x * -1), transform.position.y + attack2Offset.y, 0);
+            }
+            atk2 = true;
+        }
     }
     void OnTriggerExit2D(Collider2D collision){
         if(collision.gameObject.tag == "Hitbox") {
